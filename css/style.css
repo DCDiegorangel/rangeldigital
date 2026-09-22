@@ -537,7 +537,7 @@ button{
 
 .services-grid{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -798,7 +798,7 @@ button{
   display: none;
 }
 
-/* ==========================================================================
+/* ==========================================================================\n   PACOTE INICIAL\n   ========================================================================== */\n.initial-package{\n  background: var(--black);\n}\n\n.pkg-wrap{\n  max-width: 760px;\n  margin: 0 auto;\n}\n\n.pkg-card{\n  border-color: rgba(255,107,0,0.35);\n  background:\n    linear-gradient(180deg, rgba(255,107,0,0.055), var(--black) 38%);\n  box-shadow: 0 18px 45px -28px rgba(255,107,0,0.45);\n}\n\n.pkg-card .plan-price{\n  margin-bottom: 4px;\n}\n\n.pkg-note{\n  color: var(--orange-light);\n  font-size: .84rem;\n  font-weight: 600;\n  margin-bottom: 18px;\n}\n\n.pkg-card .plan-desc{\n  min-height: 0;\n  max-width: 650px;\n}\n\n/* ==========================================================================\n   LANDING PAGES\n   ========================================================================== */\n.landing{\n  background: var(--graphite);\n}\n\n.landing-grid{\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 24px;\n  align-items: stretch;\n}\n\n.landing-card{\n  height: 100%;\n}\n\n.landing-card .plan-desc{\n  min-height: 0;\n}\n\n.price-prefix{\n  color: rgba(245,245,245,0.48);\n  font-size: .78rem;\n  margin-bottom: -2px;\n}\n\n.landing-card .plan-price{\n  margin-bottom: 18px;\n}\n\n.landing-card .plan-note{\n  margin-top: auto;\n}\n\n.landing-card:first-child{\n  border-color: rgba(245,245,245,0.08);\n}\n\n.landing-card:last-child{\n  border-color: rgba(255,107,0,0.45);\n  background: linear-gradient(180deg, rgba(255,107,0,0.045), var(--black) 38%);\n}\n\n/* ==========================================================================\n   AJUSTES DE HIERARQUIA DAS SEÇÕES\n   ========================================================================== */\n.initial-package .section-head,\n.plans .section-head,\n.landing .section-head{\n  margin-bottom: 42px;\n}\n\n.initial-package + .plans{\n  border-top: 1px solid rgba(245,245,245,0.04);\n}\n\n.landing .section-head{\n  max-width: 760px;\n}\n\n.landing .section-sub{\n  max-width: 700px;\n}\n\n/* ==========================================================================
    PERSONALIZAÇÃO
    ========================================================================== */
 .personalize-inner{
@@ -1284,7 +1284,7 @@ button{
     grid-template-columns: 1fr;
   }
 
-  .plan-featured{
+  .landing-grid{\n    grid-template-columns: 1fr;\n  }\n\n  .pkg-wrap{\n    max-width: none;\n  }\n\n  .plan-featured{
     order: -1;
   }
 
@@ -1381,7 +1381,7 @@ button{
     grid-template-columns: 1fr;
   }
 
-  .step{
+  .initial-package .section-head,\n  .plans .section-head,\n  .landing .section-head{\n    margin-bottom: 32px;\n  }\n\n  .pkg-card,\n  .landing-card{\n    padding: 28px 22px;\n  }\n\n  .pkg-note{\n    font-size: .8rem;\n  }\n\n  .step{
     grid-template-columns: 56px 1fr;
     gap: 16px;
     padding: 22px 0;
